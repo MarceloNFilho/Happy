@@ -6,33 +6,53 @@
     display: flex;
 }
 
+@media (max-width: 768px) {
+    #page-map {
+        flex-direction: column-reverse;
+    }
+}
+
 #page-map aside {
     width: 440px;
     background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
-    padding: 80px;
+    padding: 5rem;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+    #page-map aside {
+        width: 100%;
+        flex-direction: row;
+        padding: 3rem 2rem;
+    }
+}
+
 #page-map aside h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 800;
-    line-height: 42px;
-    margin-top: 64px;
+    line-height: 2.625rem;
+    margin-top: 4rem;
+}
+
+@media (max-width:768px) {
+    #page-map aside h2 {
+        margin-top: 2rem;
+    }
 }
 
 #page-map aside p {
-    line-height: 28px;
-    margin-top: 24px;
+    line-height: 1.75rem;
+    margin-top: 1.5rem;
 }
 
 #page-map aside footer {
     display: flex;
     flex-direction: column;
     
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 #page-map aside footer strong{
@@ -47,11 +67,11 @@
     z-index: 10;
 
     position: absolute;
-    right: 40px;
-    bottom: 40px;
+    right: 2.5rem;
+    bottom: 2.5rem;
 
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
     background: #15c3d6;
     border-radius: 20px;
 
@@ -60,6 +80,12 @@
     align-items: center;
 
     transition: background-color 0.2s;
+}
+
+@media (max-width: 768px) {
+    #page-map .create-orphanage {
+        background: #ffd666;
+    }
 }
 
 #page-map .create-orphanage:hover {
@@ -74,9 +100,9 @@
 
 #page-map .map-popup .leaflet-popup-content {
     color: #0089a5;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
-    margin: 8px, 16px;
+    margin: 0.5rem, 1rem;
 
     display: flex;
     justify-content: space-between;
@@ -84,8 +110,8 @@
 }
 
 #page-map .map-popup .leaflet-popup-content a {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
     background: #15c3d6;
     box-shadow: 17.2868px 27.6589px 41.48874px rgb(23, 142, 166, 0.16);

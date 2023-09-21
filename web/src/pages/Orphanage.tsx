@@ -18,10 +18,10 @@ interface Orphanage {
   instructions: string;
   opening_hours: string;
   open_on_weekends: string;
-  images: Array<{
+  images: {
     url: string;
     id: string;
-  }>;
+  }[];
 }
 
 interface OrphanageParams {
